@@ -21,5 +21,6 @@ jobs:
           pip install --upgrade pip
           python train.py
           
-          cat feature_importance.png >> report.md
+          echo "# CML report" >> report.md
+          echo '![](./feature_importance.png "Confusion Matrix")' >> report.md
           cml comment create report.md

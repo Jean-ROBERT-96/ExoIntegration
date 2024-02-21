@@ -23,4 +23,4 @@ jobs:
           
           echo "# CML report" >> report.md
           echo '![](./feature_importance.png "Confusion Matrix")' >> report.md
-          cml comment create report.md
+          cml comment create --pr --publish report.md
